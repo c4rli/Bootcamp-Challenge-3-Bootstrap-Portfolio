@@ -120,7 +120,7 @@ hr {
 }
 
 #skills-top, #skills-middle, #skills-bottom {
-    flex: 1 1 auto;
+    flex: 1;
     height: 33%;
 }
 
