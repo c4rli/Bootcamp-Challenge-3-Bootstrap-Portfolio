@@ -33,21 +33,22 @@
                     carli n.
                 </a>
 
-              
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">home <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#2">works</a>
-                        <a class="nav-item nav-link" href="#">skills</a>
-                        <a class="nav-item nav-link" href="#">contact</a>
-                        <a class="nav-item nav-link disabled" href="#">artwork</a>
-                    </div>
-               
+
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#skills">skills</a>
+                    <a class="nav-item nav-link" href="#projects">works</a>
+                    
+                    <a class="nav-item nav-link disabled" href="">artwork</a>
+                    <a class="nav-item nav-link" href="#contact">contact</a>
+                </div>
+
             </nav>
         </div>
 
         <!-- Home page -->
         <div id="section-home" class="container-fluid">
-            <div id="toptop" class="col-md-12 col-sm-0 blank"></div>
+            <div id="top" class="col-md-12 col-sm-0 blank nav-spacer"></div>
             <div id="content-top" class="row">
                 <div id="title-container" class="col-lg-8">
                     <h1 class="page-title"> WEB PORTFOLIO</h1>
@@ -66,11 +67,15 @@
                 </div>
                 <div class="col-lg-4 blank d-flex align-items-end justify-content-center">
                     <div>
-                        <p id="name-bottom">I am digital artist and creative technologist based in London - I started viscoplastique? digital studios as an experimental content creation collective. I'm learning front end dev with the end goal of becoming a full stack developer so I can make interesting web experiences.
-                            Welcome to my page!
-                            
-                            
-                            <br><br>made using bootstrap 4.6<br>2022</p>
+                        <p id="name-bottom">I'm a visual artist and creative technologist based in London - I started
+                            viscoplastique? digital studios as an experimental content creation collective. I'm currently 
+                            learning front end dev on a bootcamp. My end goal is becoming a full stack developer to 
+                            make interactively interesting web experiences that cross over into real life.
+                            <br>Welcome to my page!
+
+
+                            <br><br>This is challenge #3.<br>made using bootstrap 4.6<br>2022
+                        </p>
                     </div>
                 </div>
             </div>
@@ -80,11 +85,11 @@
     <!-- Skills Section -->
 
     <div id="section-skills" class="container-fluid">
-        <div id="toptop" class="col-md-12 col-sm-0"></div>
+        <div id="skills" class="col-md-12 col-sm-0 nav-spacer"></div>
 
 
         <div id="skills-container" class="row">
-            <div id="heading-skills" class="col-lg-1">
+            <div id="heading-skills" class="col-lg-1 section-heading">
                 <div>
                     <h2 class="side-heading">SKILLS</h2>
                 </div>
@@ -97,7 +102,7 @@
                             <p id="name-top">software/development</p>
                             <ul>
                                 <li>
-                                    <i class="devicon-html5-plain"></i>HTML
+                                    <i class="devicon-html5-plain"></i>HTML <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i class="fa-regular fa-circle"></i> <i class="fa-regular fa-circle"></i> <i class="fa-regular fa-circle"></i>
 
                                 </li>
                                 <li>
@@ -174,6 +179,7 @@
 
                                     <i class="devicon-vuejs-plain"></i>Vue
                                 </li>
+                                <i class="fa-solid fa-person-falling"></i>yoga
                             </ul>
                         </div>
                     </div>
@@ -189,113 +195,93 @@
     <hr>
 
     <!-- Projects -->
-    <div id="2"></div>
-    <div id="section-skills" class="container-fluid">
-        <div id="toptop" class="col-md-12 col-sm-0"></div>
+    <div id="section-projects" class="container-fluid">
+        <div id="projects" class="col-md-12 col-sm-0 nav-spacer"></div>
 
 
-        <div id="skills-container" class="row">
-            <div id="heading-skills" class="col-lg-1">
+        <div id="projects-container" class="row">
+            <div id="section-heading" class=" section-heading col-lg-1">
                 <div>
                     <h2 class="side-heading">PROJECTS</h2>
                 </div>
             </div>
-            <div id="skills-text" class="col-lg-11">
-                <div class="card-deck">
-                    <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div id="projects-content" class="col-lg-11 p-0">
+                
+                <div class="row row-cols-1 row-cols-lg-3 m-0">
+                    <div class="col card-container">
+                      <div class="card h-100">
+                        <img src="./assets/images/project-horiseon.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><div class="language-box"><i class="devicon-html5-plain"></i><i class="devicon-css3-plain"></i></div>Horiseon code refactor challenge</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <div class="col card-container">
+                      <div class="card h-100">
+                        <img src="./assets/images/project-portfolio1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">CSS portfolio challenge <i class="devicon-html5-plain"></i><i class="devicon-css3-plain"></i></h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <div class="col  card-container">
+                      <div class="card h-100">
+                        <img src="./assets/images/project-portfolio2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Bootstrap portfolio challenge <i class="devicon-html5-plain"></i><i class="devicon-css3-plain"></i></h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
                       </div>
                     </div>
-                  </div>  
-                  <div class="card-deck">
-                    <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <div class="col  card-container">
+                      <div class="card h-100">
+                        <img src="./assets/images/project-tarot.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">c4rli's tarot app <i class="devicon-python-plain"></i></h5> 
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <div class="col card-container">
+                        <div class="card h-100">
+                          <img src="./assets/images/project-caesar.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">caesar cipher app <i class="devicon-c-plain"></i></h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col card-container">
+                        <div class="card h-100">
+                          <img src="https://placehold.co/900x700?text=coming+soon..." class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">LED morse code</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                  </div>   
-                  <div class="card-deck">
-                    <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                  </div>    
-            
-            
-            
-            
+                </div>
+                  
+
+
+
+
             </div>
         </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.6.1.js"
-        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-        crossorigin="anonymous"></script>
-    <script src="./assets/js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"></script>
+        <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
