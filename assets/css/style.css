@@ -20,7 +20,9 @@ nav {
     height: 100px;
     background-color: black;
     position: relative;
-    transition: background-color 5s;;
+    transition: background-color 5s, visibility 5s;
+    visibility: hidden;
+    
     
 } 
 nav img {
@@ -44,7 +46,7 @@ flex-direction: column;
 
 }
 
-#section-home, #section-skills, #section-projects {
+#section-home, #section-skills, #section-projects, #section-contact {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -61,6 +63,33 @@ flex-direction: column;
 #content-bottom {
     flex:70%
 }
+
+#contact-bottom {
+    flex:100%;   
+}
+
+#contact-image {
+    background-image: url("../images/Hero3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+
+    transition: filter 2s;
+}
+
+#contact-image h2 {
+    display: inline-block;
+    left: -10%;
+    position: relative;
+    font-size: 100px;
+}
+
+#contact-container {
+    margin: 0 !important; 
+    padding: 5% 4% 5% 8%;
+}
+
 
 #title-container {
     display: flex;
@@ -149,9 +178,19 @@ hr {
     justify-content: space-between;
 }
 
- .card-img-top {
+ /* .card-img-top {
     max-width: 100%;
     height: 60%;
+    object-fit: cover;
+} */
+
+.project-icons {
+    float: right;
+}
+
+.card img {
+    width: 100%;
+    max-height: 60%;
     object-fit: cover;
 }
 
@@ -167,8 +206,13 @@ hr {
 }
 
 .card-container {
-    height: 48%;
-    padding: 15px;
+    height: 40vh;
+    padding: 0 15px;
+}
+
+#project-cards {
+    flex:50%;
+    align-items: center;
 }
 
 /*
@@ -237,6 +281,7 @@ hr {
     width: 100%; 
     background-color: white;
     transition: background-color 5s;
+    visibility: unset;
 }
 
 .fixed-header-img {
@@ -246,7 +291,9 @@ hr {
 
 .fixed-header-reverse {
     background-color: black;
-    transition: background-color 5s;
+    transition: background-color 5s, visibility 5s;
+    visibility: hidden;
+
 }
 
 .visible-title {
