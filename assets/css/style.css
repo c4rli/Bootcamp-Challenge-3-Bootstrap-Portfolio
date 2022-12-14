@@ -16,6 +16,15 @@ main {
  justify-content: space-between;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 #nav-container {
     height: 100px;
     overflow-y: visible;
@@ -129,6 +138,8 @@ flex-direction: column;
     font-size: 1.5vw;
 }
 
+
+
 #contact-details div {
     padding: 15px 0;
 }
@@ -191,7 +202,41 @@ hr {
 
 #skills-top, #skills-middle, #skills-bottom {
     flex: 1;
-    height: 33%;
+    height: 31.33333%;
+}
+
+#skills-top {
+    background-image: url("../images/keyboard-hero.png");
+}
+
+#skills-middle {
+    background-image: url("../images/camera-hero.jpg");
+}
+
+#skills-bottom {
+    background-image: url("../images/future-hero.jpg");
+
+}
+
+#middle-card {}
+
+.skills-background {
+    background-size: cover;
+    background-position: center;
+    margin: 1% 1%;
+}
+
+.skill-card {
+    height: 90%;
+    min-width: 30%;
+    margin: 1% 5%;
+    opacity:    0.9;
+    font-size: 2vh;
+}
+
+.skill-title {
+    font-size: 3vh;
+    padding-bottom: 10px;
 }
 
 #skills-container, #projects-container{
@@ -202,9 +247,17 @@ hr {
     height: 100%;
     flex: 1 1 auto;
 }
+
+.side-heading-container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
 .side-heading {
     font-size: 100px;
     writing-mode: vertical-lr;
+
 }
 
 #projects-content {
@@ -267,6 +320,17 @@ footer button{
 footer p {
     margin: 0 10px;
 }
+
+footer p a{
+    transition: font-size 4s;
+    text-decoration:underline;
+    color: #007bff;
+}
+
+footer p a:hover {
+    font-size: 40px;
+    text-decoration:none;
+}
 /*
 #projects-1
 {
@@ -308,6 +372,7 @@ footer p {
 
     .side-heading {
         writing-mode:unset;
+        font-size: 60px !important;
     }
 
     .section-heading {
@@ -315,6 +380,21 @@ footer p {
         display: flex;
         justify-content: center;
     }
+
+    
+    .main-text {
+        font-size: 18px;
+    }
+
+    #name-top {
+        font-size: 50px;
+    }
+
+    #contact-text {
+        color: black;
+        font-weight: 700;
+    }
+
 
 
 
@@ -328,6 +408,13 @@ footer p {
     } */
 }
 
+@media only screen and (max-width: 1440px) {
+ 
+    .side-heading {
+        font-size: 7vw;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     #section-projects{
         height: 100%;
@@ -336,6 +423,8 @@ footer p {
     .card-container {
         padding:15px 30px;
     }
+
+
 }
 /* fsfgsg */
 
