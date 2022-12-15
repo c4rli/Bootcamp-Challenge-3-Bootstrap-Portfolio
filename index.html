@@ -6,56 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Import Bootstrap CSS, Devicons and Fontawesome Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- Import reset and styling CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <title>Document</title>
+    <!-- Page Title and Favicon -->
+    <title>c4rli's bootstrap portfolio - home</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 
 <body>
-
     <main>
 
-        <div class="container-fluid p-0" id="testing1">
+        <div class="container-fluid d-flex flex-column p-0">
 
             <!-- Navigation Bar  -->
             <div id="nav-container">
-                <nav class="navbar navbar-expand-sm navbar-dark">
+                <nav class="navbar navbar-expand navbar-dark">
                     <a class="navbar-brand" href="#">
-                        <img src="./assets/images/logo.png" width="100" height="100" class="d-inline-block align-middle"
-                            alt="">
+                        <img src="./assets/images/logo.png" class="d-inline-block align-middle" alt="carli n. logo">
                         carli n.
                     </a>
 
-
+                    <!-- Navigation links -->
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">home <span class="sr-only">(current)</span></a>
+                        <a id="home-link" class="nav-item nav-link active" href="#">home <span class="sr-only">(current)</span></a>
                         <a class="nav-item nav-link" href="#skills">skills</a>
                         <a class="nav-item nav-link" href="#projects">projects</a>
-
                         <a class="nav-item nav-link disabled" href="">artwork</a>
                         <a class="nav-item nav-link" href="#contact">contact</a>
                     </div>
-
                 </nav>
             </div>
 
 
 
-            <!-- Home page -->
-            <div id="section-home" class="container-fluid">
-                <div id="top" class="col-md-12 col-sm-0 blank nav-spacer"></div>
+            <!-- Home Page -->
+            <section id="section-home" class="container-fluid">
+                <div id="top" class="col-md-12 col-sm-0 nav-spacer"></div>
                 <div id="content-top" class="row">
-                    <div id="title-container" class="col-lg-8">
+
+                    <div id="title-container" class="flex-center col-12 col-lg-8">
                         <h1 class="page-title"> WEB PORTFOLIO</h1>
                     </div>
-                    <div id="name-container" class="col-lg-4">
+
+                    <div id="name-container" class="col-12 col-lg-4 flex-center">
                         <div id="page-title-name">
                             <p id="name-top">carli n<span style="color: #292929">avarro</span> </p>
                             <p class="main-text text-center">creative technologist<br>visual artist</p>
@@ -64,11 +66,13 @@
                 </div>
 
                 <div id="content-bottom" class="row">
-                    <div id="hero-container" class="col-lg-8 p-0">
-                        <div id="hero-image" class="color-on-hover">gdfg</div>
+                    <div id="hero-container" class="col-12 col-lg-8 p-0">
+                        <div id="hero-image" class="flex-center color-on-hover"></div>
                     </div>
-                    <div class="col-lg-4 blank d-flex align-items-end justify-content-center pb-2">
-                        <p id="name-bottom" class="main-text">i'm a visual artist and creative technologist based in
+
+                    <div class="col-12 col-lg-4 d-flex align-items-end justify-content-center pb-2">
+                        <p id="welcome-text" class="main-text text-center">i'm a visual artist and creative technologist
+                            based in
                             London - i started
                             viscoplastique? digital studios as an experimental content creation collective. i'm
                             currently
@@ -79,29 +83,30 @@
 
                             <br><br>this is challenge #3.<br>made using bootstrap 4.6<br>2022
                         </p>
-
                     </div>
                 </div>
-            </div>
+            </section>
+
         </div>
 
         <!-- Skills Section -->
-
-        <div id="section-skills" class="container-fluid">
-            <div id="skills" class="col-md-12 col-sm-0 nav-spacer">
+        <section id="section-skills" class="container-fluid">
+            <div id="skills" class="col-12 nav-spacer">
                 <hr>
             </div>
 
-
             <div id="skills-container" class="row">
+
                 <div id="heading-skills" class="col-lg-1 section-heading">
-                    <div class="side-heading-container">
+                    <div class="flex-center">
                         <h2 class="side-heading">SKILLS</h2>
                     </div>
                 </div>
+
                 <div id="skills-text" class="col-lg-11">
 
-                    <div id="skills-top" class="row skills-background">
+                    <!-- Top Skills Card -->
+                    <div id="skills-top" class="row skills-background color-on-hover">
                         <div id="top-card" class="card skill-card">
                             <div class="card-body">
                                 <p class="skill-title">development</p>
@@ -109,50 +114,65 @@
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th><i class="devicon-html5-plain"></i>HTML </th>
+                                            <th>
+                                                <i class="devicon-html5-plain"></i>HTML
+                                            </th>
                                             <th><i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i></th>
+                                                    class="fa-solid fa-circle"></i>
+                                                <i class="fa-regular fa-circle"></i> <i
+                                                    class="fa-regular fa-circle"></i>
+                                            </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><i class="devicon-css3-plain"></i>CSS </td>
+                                            <td>
+                                                <i class="devicon-css3-plain"></i>CSS
+                                            </td>
                                             <td><i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
+                                                    class="fa-regular fa-circle"></i>
+                                                <i class="fa-regular fa-circle"></i> <i
                                                     class="fa-regular fa-circle"></i>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><i class="devicon-c-plain"></i>C </td>
+                                            <td>
+                                                <i class="devicon-c-plain"></i>C
+                                            </td>
                                             <td><i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i></td>
+                                                    class="fa-solid fa-circle"></i>
+                                                <i class="fa-regular fa-circle"></i> <i
+                                                    class="fa-regular fa-circle"></i>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td><i class="devicon-python-plain"></i>Python </td>
+                                            <td>
+                                                <i class="devicon-python-plain"></i>Python
+                                            </td>
                                             <td><i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i></td>
+                                                    class="fa-regular fa-circle"></i>
+                                                <i class="fa-regular fa-circle"></i> <i
+                                                    class="fa-regular fa-circle"></i>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td><i class="devicon-bash-plain"></i>BASH </td>
+                                            <td>
+                                                <i class="devicon-bash-plain"></i>BASH
+                                            </td>
                                             <td><i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i></td>
+                                                    class="fa-regular fa-circle"></i>
+                                                <i class="fa-regular fa-circle"></i> <i
+                                                    class="fa-regular fa-circle"></i>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-
                     </div>
-                    <div id="skills-middle" class="row skills-background">
+
+                    <!-- Middle Skills Card -->
+                    <div id="skills-middle" class="row skills-background color-on-hover">
                         <div id="middle-card" class="card skill-card">
                             <div class="card-body">
                                 <p class="skill-title">audio/visual</p>
@@ -160,52 +180,63 @@
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th><i class="fa-solid fa-camera"></i>photography </th>
+                                            <th>
+                                                <i class="fa-solid fa-camera"></i>photography
+                                            </th>
                                             <th><i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i></th>
+                                                    class="fa-solid fa-circle"></i>
+                                                <i class="fa-solid fa-circle"></i> <i class="fa-regular fa-circle"></i>
+                                            </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><i class="fa-solid fa-video"></i>videography</td>
+                                            <td>
+                                                <i class="fa-solid fa-video"></i>videography
+                                            </td>
                                             <td><i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
+                                                    class="fa-solid fa-circle"></i>
+                                                <i class="fa-regular fa-circle"></i> <i
                                                     class="fa-regular fa-circle"></i>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><i class="fa-solid fa-wand-magic-sparkles"></i>image/video editing </td>
+                                            <td><i class="fa-solid fa-wand-magic-sparkles"></i>image/video editing
+                                            </td>
                                             <td><i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i></td>
+                                                    class="fa-solid fa-circle"></i>
+                                                <i class="fa-regular fa-circle"></i> <i
+                                                    class="fa-regular fa-circle"></i>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td><i class="fa-solid fa-tower-broadcast"></i>livestreaming</td>
+                                            <td>
+                                                <i class="fa-solid fa-tower-broadcast"></i>livestreaming
+                                            </td>
                                             <td><i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i></td>
+                                                    class="fa-regular fa-circle"></i>
+                                                <i class="fa-regular fa-circle"></i> <i
+                                                    class="fa-regular fa-circle"></i>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td><i class="fa-solid fa-headphones"></i>music production</td>
+                                            <td>
+                                                <i class="fa-solid fa-headphones"></i>music production
+                                            </td>
                                             <td><i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i></td>
+                                                    class="fa-regular fa-circle"></i>
+                                                <i class="fa-regular fa-circle"></i> <i
+                                                    class="fa-regular fa-circle"></i>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                        <div id="name-container" class="col-m-8">
-
-                        </div>
                     </div>
-                    <div id="skills-bottom" class="row skills-background">
+
+                    <!-- Bottom Skills Card -->
+                    <div id="skills-bottom" class="row skills-background color-on-hover">
                         <div id="bottom-card" class="card skill-card">
                             <div class="card-body">
                                 <p class="skill-title">in progress</p>
@@ -213,80 +244,89 @@
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th><i class="devicon-javascript-plain"></i>JavaScript</th>
+                                            <th>
+                                                <i class="devicon-javascript-plain"></i>JavaScript
+                                            </th>
                                             <th><i class="fa-solid fa-circle"></i> <i class="fa-regular fa-circle"></i>
+                                                <i class="fa-regular fa-circle"></i>
                                                 <i class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i></th>
+                                                    class="fa-regular fa-circle"></i>
+                                            </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><i class="devicon-fastapi-plain"></i> APIs</td>
+                                            <td>
+                                                <i class="devicon-fastapi-plain"></i> APIs
+                                            </td>
                                             <td><i class="fa-regular fa-circle"></i> <i
                                                     class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
+                                                    class="fa-regular fa-circle"></i>
+                                                <i class="fa-regular fa-circle"></i> <i
                                                     class="fa-regular fa-circle"></i>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><i class="devicon-react-original"></i>React</td>
+                                            <td>
+                                                <i class="devicon-react-original"></i>React
+                                            </td>
                                             <td><i class="fa-regular fa-circle"></i> <i
                                                     class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
                                                     class="fa-regular fa-circle"></i>
+                                                <i class="fa-regular fa-circle"></i> <i
+                                                    class="fa-regular fa-circle"></i>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td><i class="devicon-vuejs-plain"></i>Vue</td>
+                                            <td>
+                                                <i class="devicon-vuejs-plain"></i>Vue
+                                            </td>
                                             <td><i class="fa-regular fa-circle"></i> <i
                                                     class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
-                                                    class="fa-regular fa-circle"></i> <i
                                                     class="fa-regular fa-circle"></i>
+                                                <i class="fa-regular fa-circle"></i> <i
+                                                    class="fa-regular fa-circle"></i>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td><i class="fa-solid fa-person-falling"></i>yoga</td>
+                                            <td>
+                                                <i class="fa-solid fa-person-falling"></i>yoga
+                                            </td>
                                             <td><i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i
-                                                    class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i>
-                                                <i class="fa-regular fa-circle"></i></td>
+                                                    class="fa-solid fa-circle"></i>
+                                                <i class="fa-solid fa-circle"></i> <i class="fa-regular fa-circle"></i>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
-
                             </div>
                         </div>
-                        <div id="name-container" class="col-m-8">
-
-                        </div>
                     </div>
-
                 </div>
             </div>
-        </div>
+        </section>
 
 
         <!-- Projects -->
         <div id="section-projects" class="container-fluid">
-            <div id="projects" class="col-md-12 col-sm-0 nav-spacer">
+            <div id="projects" class="col-12 nav-spacer">
                 <hr>
             </div>
 
-
             <div id="projects-container" class="row">
                 <div id="section-heading" class=" section-heading col-lg-1">
-                    <div class="side-heading-container">
+                    <div class="flex-center">
                         <h2 class="side-heading">PROJECTS</h2>
                     </div>
                 </div>
                 <div id="projects-content" class="col-lg-11 p-0">
 
+                    <!-- Project Cards -->
                     <div id="project-cards" class="row m-0">
-                        <div class="col  card-container col-12 col-lg-4">
+                        <div class="col  card-container col-12 col-md-6 col-lg-4">
                             <div class="card h-100">
                                 <img src="./assets/images/project-horiseon.jpg" class="card-img-top color-on-hover"
-                                    alt="...">
+                                    alt="Screenshot of Horiseon Project webpage">
                                 <div class="card-body">
                                     <h5 class="card-title">
                                         Horiseon code refactor challenge
@@ -298,10 +338,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col  card-container col-12 col-lg-4">
+
+                        <div class="col  card-container col-12 col-md-6 col-lg-4">
                             <div class="card h-100">
                                 <img src="./assets/images/project-portfolio1.png" class="card-img-top color-on-hover"
-                                    alt="...">
+                                    alt="Screenshot of Portfolio 1 webpage">
                                 <div class="card-body">
                                     <h5 class="card-title">CSS portfolio challenge <i
                                             class="project-icons devicon-html5-plain"></i><i
@@ -311,10 +352,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col  card-container col-12 col-lg-4">
+
+                        <div class="col  card-container col-12 col-md-6 col-lg-4">
                             <div class="card h-100">
                                 <img src="./assets/images/project-portfolio2.png" class="card-img-top color-on-hover"
-                                    alt="...">
+                                    alt="Screenshot of Portfolio 2 webpage">
                                 <div class="card-body">
                                     <h5 class="card-title">Bootstrap portfolio challenge <i
                                             class="project-icons devicon-html5-plain"></i><i
@@ -324,13 +366,11 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- </div>
-            
-                <div id="project-cards" class="row m-0"> -->
-                        <div class="col  card-container col-12 col-lg-4">
+
+                        <div class="col  card-container col-12 col-md-6 col-lg-4">
                             <div class="card h-100">
                                 <img src="./assets/images/project-tarot.png" class="card-img-top color-on-hover"
-                                    alt="...">
+                                    alt="Screenshot of c4rli's Tarot application">
                                 <div class="card-body">
                                     <h5 class="card-title">c4rli's tarot app <i
                                             class="project-icons devicon-python-plain"></i></h5>
@@ -339,10 +379,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col  card-container col-12 col-lg-4">
+
+                        <div class="col  card-container col-12 col-md-6 col-lg-4">
                             <div class="card h-100">
                                 <img src="./assets/images/project-caesar.png" class="card-img-top color-on-hover"
-                                    alt="...">
+                                    alt="Screenshot of caesar cipher application">
                                 <div class="card-body">
                                     <h5 class="card-title">caesar cipher app <i
                                             class="project-icons devicon-c-plain"></i></h5>
@@ -351,49 +392,26 @@
                             </div>
                         </div>
 
-                        <div class="col  card-container col-12 col-lg-4">
+                        <div class="col  card-container col-12 col-md-6 col-lg-4">
                             <div class="card h-100">
-                                <img src="https://placehold.co/1600x1000" class="card-img-top color-on-hover" alt="...">
+                                <img src="https://placehold.co/1600x1000?text=coming+soon..."
+                                    class="card-img-top color-on-hover" alt="Placeholder image that says coming soon">
                                 <div class="card-body">
-                                    <h5 class="card-title">Bootstrap portfolio challenge <i
-                                            class="devicon-html5-plain"></i><i
-                                            class="project-icons devicon-css3-plain"></i></h5>
+                                    <h5 class="card-title">projects coming up</h5>
                                     <p class="card-text">the future... </p>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- <div class="col  card-container col-md-12 col-lg-4">
-                        <div class="card h-100">
-                            <img src="https://placehold.co/900x700?text=coming+soon..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">LED morse code</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                    to additional content. This content is a little bit longer.</p>
-                            </div>
-                        </div>
-                    </div> -->
-
                     </div>
-
                 </div>
-
-
-
-
             </div>
-
-
-
-
-
-
         </div>
 
         <!-- Contact Me Section -->
-        <div id="section-contact" class="container-fluid">
+        <section id="section-contact" class="container-fluid">
 
-            <div id="contact" class="col-md-12 col-sm-0 nav-spacer">
+            <div id="contact" class="col-12 nav-spacer">
                 <hr>
             </div>
 
@@ -403,7 +421,8 @@
                         <h2>GET&nbsp;IN<br>TOUCH</h2>
                     </div>
                 </div>
-                <div class="col-lg-4 blank d-flex align-items-end justify-content-center p-5 flex-column">
+                
+                <div class="col-lg-4 d-flex align-items-end justify-content-center p-5 flex-column">
                     <p id="contact-text" class="main-text">hello hello! i'm carli n also known as c4rli++, i'm a fan of
                         everything relating to computers, art and cameras.
                         <br>my job requires me to do these things but i also spend a lot of my free time tinkering.
@@ -411,6 +430,7 @@
                         or just want to chat
                         don't hesitate to reach out :)
                     </p>
+                    
                     <div id="contact-details" class="w-100 main-text pt-5 pb-5">
                         <div>
                             <h3>
@@ -440,32 +460,39 @@
 
                 </div>
             </div>
-        </div>
+        </section>
 
-
-        <footer>
+        <!-- Footer - containing details and media buttons -->
+        <footer class="flex-center text-right">
             <div>
-                <p> handtyped from my bedroom with love<br><a
-                        href="https://c4rli.github.io/Bootcamp-Challenge-3-Bootstrap-Portfolio/">carli n.</a> 2022</p>
+                <p> handtyped from my bedroom with love<br>
+                    <a href="https://c4rli.github.io/Bootcamp-Challenge-3-Bootstrap-Portfolio/">carli n.</a> 2022
+                </p>
             </div>
             <div>
+                <button href class="btn btn-dark shadow-lg">
+                    <a href="https://github.com/c4rli"><i class="devicon-github-original"></i>
+                    </a>
+                </button>
 
-                <button href class="btn btn-dark shadow-lg"><a href="https://github.com/c4rli"><i
-                            class="devicon-github-original"></i></a> </button>
+                <button class="btn btn-dark shadow-lg">
+                    <a href="https://linkedin.com">
+                        <i class="devicon-linkedin-plain"></i>
+                    </a>
+                </button>
 
-                <button class="btn btn-dark shadow-lg"><a href="https://linkedin.com"> <i
-                            class="devicon-linkedin-plain"></i> </a></button>
-
-                <button class="btn btn-dark shadow-lg"><a href="https://slack.com"><i class="devicon-slack-plain"></i>
-                    </a> </button>
-
+                <button class="btn btn-dark shadow-lg">
+                    <a href="https://slack.com">
+                        <i class="devicon-slack-plain"></i>
+                    </a>
+                </button>
             </div>
         </footer>
 
     </main>
 
 
-
+    <!-- Import jQuery Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -474,6 +501,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+
+    <!-- Import main.js script -->
     <script src="./assets/js/main.js"></script>
 </body>
 
